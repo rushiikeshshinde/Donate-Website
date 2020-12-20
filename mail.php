@@ -22,16 +22,16 @@ $mail->SMTPDebug = SMTP::DEBUG_SERVER;
 $mail->IsSMTP(); 
 $mail->Host = 'smtp.gmail.com';
 $mail->SMTPAuth = true; 
- //  ENABLE(gmail)
-$mail->Username = 'teozoumphs@gmail.com';                     
-$mail->Password = 'faketeozoumphs'; 
+ //TO ENABLE COMPLETE USERNAME AND PASSWORD
+$mail->Username = 'youremailadsress';                     
+$mail->Password = 'youremailpassword'; 
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
 $mail->Port = 587;
 
 $mail->setFrom($email, $name);
 $mail->AddReplyTo($email, $name);
 $mail->addAddress('teozoumphs@gmail.com'); 
-//  ENABLE
+
 $mail->SMTPOptions = array(
 'ssl' => array(
 'verify_peer' => false,
@@ -41,13 +41,11 @@ $mail->SMTPOptions = array(
 );
 
 $mail->isHTML(true);
-$mail->Subject = 'Iris Contact Form';
+$mail->Subject = 'Iris Contact Form';  
 $mail->Body = $subject;
-
 $mail->send();  
 } 
 //errors
 catch (Exception $e){}
-        //ENABLE
-//less secure apps in gmail account                
+               
 ?>
