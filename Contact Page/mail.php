@@ -23,8 +23,8 @@ $mail->IsSMTP();
 $mail->Host = 'smtp.gmail.com';
 $mail->SMTPAuth = true; 
  //TO ENABLE ENTER GMAIL ADDRESS AND PASSWORD
-$mail->Username = '';                     
-$mail->Password = ''; 
+$mail->Username = 'youremail';                     
+$mail->Password = 'yourpassword'; 
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
 $mail->Port = 587;
 
