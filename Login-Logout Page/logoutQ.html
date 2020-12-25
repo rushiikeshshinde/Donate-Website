@@ -16,14 +16,14 @@
 
 <!--internal css-->
 <style>
-* {
-  box-sizing: border-box;
-}
-body {
+ * {
+   box-sizing: border-box;
+ }
+  body {
   height: 100%;
 }
 
-/*logged in modal*/
+/*log out modal*/
 #modal {
   display: block; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -53,10 +53,25 @@ body {
   font-size: 30px;
 }
 .modal-content a{
- color: dodgerblue;
+  color: dodgerblue;
+}
+/*close modal*/
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-right: 496px;
+  padding-top: 20px;
+}
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-/*background login form*/
+/*background logged in form*/
 .container {
   top: 100px;
   position: relative;  
@@ -65,7 +80,7 @@ body {
   background-color: #000;
   color: white;
 }
-/*login form fields*/
+/*logged in form fields*/
  .container input[type=text], input[type=password], input[type=email] {
   width: 250px;
   padding: 15px;
@@ -73,7 +88,7 @@ body {
   outline: none;
   background: #fff;
 }
-/*login button*/
+/*logged in button*/
 .btn {
   background-color: #000000;
   color: white;
@@ -81,15 +96,18 @@ body {
   cursor: pointer;
   width: 250px;
 }
-
-/*show password*/
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+/*show password button*/
 .see i{
- margin-left: -29px;
- cursor: pointer;
- color: black;
+  margin-left: -29px;
+  cursor: pointer;
+  color: black;
 }
 
-/*sign up links*/
+/*sign up link*/
 #new a{
   scroll-behavior: smooth;
   color: dodgerblue;
@@ -98,7 +116,7 @@ body {
 </head>
 
 <body>
-<!--navigation bar-->
+ <!--navigation bar-->
  <div class="topnav">
   <a  href="css.html"><i class="fa fa-home"></i> Home</a>
   <div class="dropdown">
@@ -129,45 +147,46 @@ body {
   </div>
  </div>
 
-<!--background login form-->
- <form class="container" align="center" method="post">
-  <h1>Login</h1>
-  <!--email field-->
-  <label for="email"><b>Email</b></label>
-  </br>
-  <input type="email" placeholder="Enter Email" name="mail" required>
-  </br>
-  <!--password field-->
-  <label for="psw"><b>Password</b></label>
-  </br>
-  <!--show password-->
-  <div class="see">
-   <input type="password" placeholder="Enter Password" name="pswd" id="psw" required autocomplete="off">
-   <i class="fa fa-eye" id="togglePassword"></i>
-   </br>
-   <!--login button-->
-   <input type="submit" class="btn" value="Login"</input>
-   <!--sign up link-->
-   <div id="new">
+<!--login form background-->
+  <form class="container" align="center" method="post">
+   <h1>Login</h1>
+    <!--email field-->
+    <label for="email"><b>Email</b></label>
     </br>
-    <a href="signup.php"><p>Do not have an account?</p></a>
+    <input type="email" placeholder="Enter Email" name="mail" required>
+    </br>
+    <!--password field-->
+    <label for="psw"><b>Password</b></label>
+    </br>
+    <!--show password icon-->
+    <div class="see">
+     <input type="password" placeholder="Enter Password" name="pswd" id="psw" required autocomplete="off">
+     <i class="fa fa-eye" id="togglePassword"></i>
+     </br>
+     </br>
+     <!--login button-->
+     <input type="submit" class="btn" value="Login"</input>
+     <div id="new">
+      </br>
+      <!--sign up link-->
+      <a href="signup.php"><p>Do not have an account?</p></a>
+     </div>
+    </form> 
    </div>
-  </form> 
- </div>
 
-<!--succes log in modal-->
- <div id="modal">
-  <div class="modal-content">
-   <i class="fas fa-users"></i>
-   <p>You are logged in.</br></br> Forgot yor password?
-   <a href="contact.html">Contact Us.</a></br>
-   <a href="logoutQ.html">Log out.</a> <br></p>
-   <a href="css.html">Home</a> 
-  </div>
- </div>
+<!--log out modal-->
+   <div id="modal">
+    <a class="close" href="successLogin.html">&times;</a>
+    <div class="modal-content">
+     <i class="fas fa-user-slash"></i>
+     <p>Are you sure you want to log out?<br>
+     </br><br>
+     <a href="logout.php">Yes</a></br>
+    </div>
+   </div>
 
 <!--JavaScript-->
-<!--script for serach bar-->
+<!--script search bar-->
 <script>
 function myFunction() {
   //variables
@@ -179,9 +198,9 @@ function myFunction() {
   if(input.value.length == 0){
      ul.style.display = "none";
      return;
-  }else{
+   }else{
       ul.style.display = "block";
-  }
+   }
   //Loop through all list items, and hide those who don't match
   for (i = 0; i < li.length-1; i++) {
     a = li[i].getElementsByTagName("a")[0];
