@@ -13,141 +13,15 @@
 <!--icons-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!--css-->
+<!--external css-->
+<link rel="stylesheet" type="text/css" href="style.css"> 
+
+<!--internal css-->
 <style>
-* {box-sizing: border-box}
+
 body {
   background-color: black;
-  margin: 0;
-  font-family: "Palatino Linotype", Helvetica, sans-serif;
 }
-
-/*navigation bar*/
-.topnav {
-  position: fixed;
-  background-color: #000;
-  width: 100%;
-  z-index: 10;
-  }
-/*navigation bar links*/
-.topnav a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 1.3vw 1.4vw;
-  text-decoration: underline;
-  font-size: 15px;
-}
-.topnav a:hover {
-  background-color: #fff;
-  color: black;
-}
-.topnav a.active {
-  background-color: #eeeeee;
-  color: #000;
-}
-.topnav a.active:hover {
-  background-color: #fff
-  }
-/*navigation bar donate menu*/
-.drpbutton {
-  font-family: inherit;
-  color: white;
-  padding: 1.3vw 1.4vw;
-  text-decoration: underline;
-  font-size: 15px;
-  background-color:black;
-  border: none;
-  outline: none;
-}
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-.drpbutton:hover {
-  background-color: #fff;
-  color: black;
-}
-/*donate menu links*/
-.droplist {
-   display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 1vw;
-}
-.droplist a {
-  float: none;
-  color: black;
-  padding: 1.3vw 1.7vw;
-  display: block;
-  text-align: left;
-  cursor: pointer;
-  font-family: "Palatino Linotype";
-}
-.droplist a:hover {
-  background-color: #000;
-  color: white;
-}
-.dropdown:hover .droplist {
-  display: block;
-}
-/*search bar*/
-.topnav .search {
-  float: right;
-}
-/*search bar input field*/
-.topnav input[type=text] {
-  padding: 0.6vw;
-  margin-top: 1vw;
-  font-size: 15px;
-  border: none;
-  background-color: #fff;
-  color: #000;
-  outline: none;
-}
-/*search icon button*/
-.topnav .search button {
-  float: right;
-  padding: 0.63vw 0.7vw;
-  margin-top: 1vw;
-  margin-right: 10px;
-  background: #ddd;
-  font-size: 16px;
-  border: none;
-  outline: none;
-}
-/*search options list*/
-.myUL {
-  list-style-type: none;
-  padding-left: 0px;
-  padding-right: 49px;
-  margin-top: 0.5px;
-  display: none;
-  position: absolute;
-}
-.search {
-  float: left;
-  overflow: auto;
-}
-/*search options links*/
-.myUL li a {
-  text-align: left;
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #fff;
-  padding: 5px;
-  text-decoration: none;
-  font-size: 15px;
-  color: black;
-  display: block;
-  min-width: 208px;
-  overflow: auto;
-}
-.myUL li a:hover{
-  background-color: #000;
-  color: #fff;
-}
-
 /*Contact form*/
 .container {
   float:left;
