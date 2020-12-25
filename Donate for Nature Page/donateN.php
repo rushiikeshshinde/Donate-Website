@@ -27,132 +27,16 @@
   <!--icons-->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--css-->
+
+<!--external css-->
+<link rel="stylesheet" href="style.css">
+
+<!--internal css-->
  <style>
-  * {box-sizing: border-box}
-  body {
-   margin: 0;
-   font-family: "Palatino Linotype", Helvetica, sans-serif;
-  }
-  /*navigation bar*/
-  .topnav {
-    position: fixed;
-    background-color: #000;
-    width: 100%;
-    z-index: 10;
-  }
-  /*navigation bar links*/
-  .topnav a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 1.3vw 1.4vw;
-    text-decoration: underline;
-    font-size: 15px;
-  }
-  .topnav a:hover {
-    background-color: #fff;
-    color: black;
-  }
-  /*donate options*/
-  .drpbutton {
-    font-family: inherit;
-    color: black;
-    padding: 1.3vw 1.5vw;
-    text-decoration: underline;
-    font-size: 15px;
-    border: none;
-    outline: none;
-  }
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  .drpbutton:hover {
-    background-color: #fff;
-    color: black;
-  }
-  /*donate options list*/
-  .droplist {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    min-width: 10px;
-  }
-  /*donate options links*/
-  .droplist a {
-    float: none;
-    color: black;
-    padding: 1.3vw 1.7vw;
-    display: block;
-    text-align: left;
-    cursor: pointer;
-    font-family:  "Palatino Linotype";
-  }
-  .droplist a:hover {
-    background-color: #000;
-    color: white;
-  }
-  .dropdown:hover .droplist {
-    display: block;
-  }
-  /*search bar*/
-  .topnav .search {
-    float: right;
-  }
-  /*search bar field*/
-  .topnav input[type=text] {
-    padding: 0.6vw;
-    margin-top: 1vw;
-    font-size: 15px;
-    border: none; 
-    background-color: #fff;
-    color: black;
-    outline: none;
-  }
-  /*search icon button*/
-  .topnav .search button {
-    float: right;
-    padding: 0.62vw 0.7vw;
-    margin-top: 1vw;
-    margin-right: 10px;
-    background: #ddd;
-    font-size: 16px;
-    border: none;
-    outline: none;
-  }
-  /*search bar options list*/
-  .myUL {
-    list-style-type: none;
-    padding-left: 0px;
-    padding-right: 49px;
-    margin-top: 0.5px;
-    display: none;
-    position: absolute;
-  }
-  .search {
-    float: left;
-    overflow: auto;
-  }
-  /*search bar list links*/
-  .myUL li a {
-    text-align: left;
-    border: 1px solid #ddd;
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #fff;
-    padding: 5px;
-    text-decoration: none;
-    font-size: 15px;
-    color: black;
-    display: block;
-    min-width: 208px;
-    overflow: auto;
-  }
-  .myUL li a:hover{
-    background-color: #000;
-    color: #fff;
-  }
  
+ .topnav .search button {
+  padding: 0.62vw 0.7vw;
+}
   /*background image*/
   .bg img {
     padding-top: 50px;
@@ -421,132 +305,11 @@ exit;
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!--css-->
-<style>
-* {box-sizing: border-box}
-body {
-  margin: 0;
-  font-family: "Palatino Linotype", Helvetica, sans-serif;
-}
+<!--external css-->
+<link rel="stylesheet" href="style.css">
 
-/*navigation bar*/
-.topnav {
-  position: fixed;
-  background-color: #000;
-  width: 100%;
-  z-index: 10;
-}
-/*navigation bar links*/
-.topnav a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 1.3vw 1.4vw;
-  text-decoration: underline;
-  font-size: 15px;
-}
-.topnav a:hover {
-  background-color: #fff;
-  color: black;
-}
-/*donate options*/
-.drpbutton {
-  font-family: inherit;
-  color: black;
-  padding: 1.3vw 1.4vw;
-  text-decoration: underline;
-  font-size: 15px;
-  border: none;
-  outline: none;
-}
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-.drpbutton:hover {
-  background-color: #fff;
-  color: black;
-}
-/*donate options list*/
-.droplist {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 10px;
-}
-/*donate options links*/
-.droplist a {
-  float: none;
-  color: black;
-  padding: 1.3 vw 1.7vw;
-  display: block;
-  text-align: left;
-  cursor: pointer;
-  font-family:  "Palatino Linotype";
-}
-.droplist a:hover {
-  background-color: #000;
-  color: white;
-}
-.dropdown:hover .droplist {
-  display: block;
-}
-/*search bar*/
-.topnav .search {
-  float: right;
-}
-/*search bar input field*/
-.topnav input[type=text] {
-  padding: 0.6vw;
-  margin-top: 1vw;
-  font-size: 15px;
-  border: none; 
-  background-color: #fff;
-  color: black;
-  outline: none;
-}
-/*search icon button*/
-.topnav .search button {
-  float: right;
-  padding: 0.56vw 0.7vw;
-  margin-top: 1vw;
-  margin-right: 10px;
-  background: #ddd;
-  font-size: 16px;
-  border: none;
-  outline: none;
-}
-/*serach bar options list*/
-.myUL {
-  list-style-type: none;
-  padding-left: 0px;
-  padding-right: 49px;
-  margin-top: 0.5px;
-  display: none;
-  position: absolute;
-}
-.search {
-  float: left;
-  overflow: auto;
-}
-/*search bar options links*/
-.myUL li a {
-  text-align: left;
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #fff;
-  padding: 5px;
-  text-decoration: none;
-  font-size: 15px;
-  color: black;
-  display: block;
-  min-width: 208px;
-  overflow: auto;
-}
-.myUL li a:hover{
-  background-color: #000;
-  color: #fff;
-}
+<!--internal css-->
+<style>
 
 /*background image*/
 .bg img {
