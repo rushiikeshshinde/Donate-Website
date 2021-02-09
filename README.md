@@ -1,7 +1,7 @@
 <h1>Donate-Website</h1>
 <p>This project is implemented with HTML, CSS, JavaScript (+JQuery) and PHP.</p>
 <h3>Home Page</h3>
-<p>Home page consists of: 
+<p>Home page consists of: </br>
 -two donation pages (people and nature), </br>
 -a contact page,</br>
 -a login page.</p>
