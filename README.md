@@ -9,8 +9,8 @@
 <p>Donation pages: </br>
 -contain payment forms, </br>
 -donations are stored in MySQL database*.</p>
-<h3>Contact page</h3>
-<p>Contact Page: </br>
+<h3>Contact Page</h3>
+<p>Contact page: </br>
 -uses SMTP protocol, </br>
 -is implemented with PHPMailer library.</p>
 <h3>Login Page</h3>
