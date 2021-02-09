@@ -1,4 +1,4 @@
-#Donate-Website
+####Donate-Website
 This project is implemented with HTML, CSS, JavaScript (+JQuery) and PHP. 
 In more detail, 
 Home page consists of: -two donation pages (people and nature), 
