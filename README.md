@@ -1,7 +1,7 @@
 <h1>Donate-Website</h1>
 <p>This project is implemented with HTML, CSS, JavaScript (+JQuery) and PHP.</p>
 <h3>Home Page</h3>
-<img src="nature.jpg">
+<img src="Donate-Website/Donate for Nature Page/nature.jpg">
 <p>Home page consists of: </br>
 -two donation pages (people and nature), </br>
 -a contact page,</br>
