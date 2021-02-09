@@ -5,11 +5,17 @@
 -two donation pages (people and nature), </br>
 -a contact page,</br>
 -a login page.</p>
-Donation pages: -contain payment forms,
-                -donations are stored in MySQL database*.
-Contact page: -uses SMTP protocol,
-              -is implemented with PHPMailer library.
-Login page: -consists of sign up page and log out page.
-            -accounts are stored in MySQL database*.
+<h3>Donation Pages</h3>
+<p>Donation pages: </br>
+-contain payment forms, </br>
+-donations are stored in MySQL database*.</p>
+<h3>Contact page</h3>
+<p>Contact page: </br>
+-uses SMTP protocol, </br>
+-is implemented with PHPMailer library.</p>
+<h3>Login page</h3>
+<p>Login page: </br>
+-consists of sign up page and log out page. </br>
+-accounts are stored in MySQL database*.</p>
                             
 *Database was implemented with XAMPP server.
