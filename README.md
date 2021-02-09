@@ -1,6 +1,7 @@
 <h1>Donate-Website</h1>
 <p>This project is implemented with HTML, CSS, JavaScript (+JQuery) and PHP.</p>
 <h3>Home Page</h3>
+<img src="https://github.com/MaryKroustali/Donate-Website/blob/master/Screenshots/Home.png">
 <p>Home page consists of: </br>
 -two donation pages (people and nature), </br>
 -a contact page,</br>
@@ -10,6 +11,7 @@
 -contain payment forms, </br>
 -donations are stored in MySQL database*.</p>
 <h3>Contact Page</h3>
+<img src="https://github.com/MaryKroustali/Donate-Website/blob/master/Screenshots/Contact.png">
 <p>Contact page: </br>
 -uses SMTP protocol, </br>
 -is implemented with PHPMailer library.</p>
