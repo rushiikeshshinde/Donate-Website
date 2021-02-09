@@ -3,7 +3,7 @@
 <h3>Home Page</h3>
 <pre>Home page consists of: -two donation pages (people and nature), 
                        -a contact page,
-                       -a login page.<pre>
+                       -a login page.</pre>
 Donation pages: -contain payment forms,
                 -donations are stored in MySQL database*.
 Contact page: -uses SMTP protocol,
