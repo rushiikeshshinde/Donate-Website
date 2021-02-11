@@ -1,5 +1,4 @@
-<h1>Donate-Website</h1>
-<p>Project Presentation</p>
+<h1>Project Presentation</h1>
 <h3>Home Page</h3>
 <img src="https://github.com/MaryKroustali/Donate-Website/blob/master/Screenshots/Home.png">
 <h3>Donation Pages</h3>
@@ -16,9 +15,9 @@
 <img src="https://github.com/MaryKroustali/Donate-Website/blob/master/Screenshots/login.png">
 <h4>Sign Up</h4>
 <img src="https://github.com/MaryKroustali/Donate-Website/blob/master/Screenshots/sign_up.png">
-</>hr
+</hr>
 <h1>Technical Specifications</h1>
-<h4>Login-Sign up</h4>: 
+<h4>Login-Sign up</h4>
 <p>-accounts are stored in MySQL database*</p>
 <h4>Donation</h4>
 <p>-donations are stored in MySQL database*</p> 
