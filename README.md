@@ -15,7 +15,7 @@
 <img src="https://github.com/MaryKroustali/Donate-Website/blob/master/Screenshots/login.png">
 <h4>Sign Up</h4>
 <img src="https://github.com/MaryKroustali/Donate-Website/blob/master/Screenshots/sign_up.png">
-</hr>
+<hr/>
 <h1>Technical Specifications</h1>
 <h4>Login-Sign up</h4>
 <p>-accounts are stored in MySQL database*</p>
