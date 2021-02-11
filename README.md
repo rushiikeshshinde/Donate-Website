@@ -23,5 +23,5 @@
 <p>-donations are stored in MySQL database*</p> 
 <h4>Contact</h4>
 <p>-uses SMTP protocol, </br>
--is implemented with PHPMailer library.</p>                 
-*Database was implemented with XAMPP server.
+-is implemented with PHPMailer library.</p> 
+<p>*Database was implemented with XAMPP server.<p/>
