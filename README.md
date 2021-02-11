@@ -1,15 +1,12 @@
 <h1>Donate-Website</h1>
 <p>Project Presentation</p>
 <h3>Home Page</h3>
+<u>Part of Home Page</u>
 <img src="https://github.com/MaryKroustali/Donate-Website/blob/master/Screenshots/Home.png">
-<p>Home page consists of: </br>
--two donation pages (people and nature), </br>
--a contact page,</br>
--a login page.</p>
 <h3>Donation Pages</h3>
 <h4>Donate for People</h4>
 <img src="https://github.com/MaryKroustali/Donate-Website/blob/master/Screenshots/donate_people.png">
-<h4>Donate for Nature</4>
+<h4>Donate for Nature</h4>
 <img src="https://github.com/MaryKroustali/Donate-Website/blob/master/Screenshots/donate_nature.png">
 <p>Both pages contain payment forms:</br>
 <img src="https://github.com/MaryKroustali/Donate-Website/blob/master/Screenshots/payment_form.png">
