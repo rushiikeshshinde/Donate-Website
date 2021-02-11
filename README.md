@@ -1,7 +1,7 @@
 <h1>Donate-Website</h1>
 <p>Project Presentation</p>
 <h3>Home Page</h3>
-<p text-decoration: underline;>Part of Home Page</p>
+<p style="text-decoration: underline;">Part of Home Page</p>
 <img src="https://github.com/MaryKroustali/Donate-Website/blob/master/Screenshots/Home.png">
 <h3>Donation Pages</h3>
 <h4>Donate for People</h4>
