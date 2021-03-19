@@ -38,134 +38,6 @@ if (!empty($error)) {
  .topnav .search button {
   padding: 0.62vw 0.7vw;
 }
- /*background image*/
- .bg img {
-   padding-top: 50px;
-   width:100%;
-   display: block;
- }
- /*success message modal background*/
- #modal {
-   display: block; 
-   position: fixed; 
-   z-index: 1; 
-   padding-top: 100px; 
-   left: 0;
-   top: 0;
-   width: 100%; 
-   height: 100%; 
-   overflow: auto; 
-   background-color: rgb(0,0,0); 
-   background-color: rgba(0,0,0,0.6); 
-   font-family: sans-serif;
- }
- /*success message modal*/
- .modal-content {
-   background-color: #fefefe;
-   margin: auto;
-   padding: 30px;
-   border: 1px solid #888;
-   width: 30%;
-   font-size: 15px;
-   font-weight: normal;
-   text-align: center;
- }
- .modal-content i {
-   text-align: center;
-   font-size: 30px;
- }
- .modal-content a {
-   color: dodgerblue;
- }
- /*heading title of page*/
- .heading {
-   font-size: 80px;
-   font-style: oblique;
-   position: absolute;
-   bottom: 0;
-   padding:300px 400px;
-   width: 100%;
-   color: #000;
-   text-shadow: 2px 2px white;
- }
- /*box donate once*/
- .now {
-   left: 200px;
-   top: 300px;
-   text-align: center;
-   font-size: 20px;
-   font-style: bold;
-   position: absolute;
-   margin: 60px 0 0 30px;
-   padding: 15px 30px;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-   transition: 0.3s;
-   background: rgb(0, 0, 0); /* Fallback color */
-   background: rgba(0, 0, 0, 0.8);   
-   color: white;
-   text-decoration:none;
- }
- .now:hover {
-   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
-   cursor: pointer;
- }
- .now i {
-   font-size: 30px;
- }
- /*box donate monthly*/
- .month {
-   left: 500px;
-   top: 300px;
-   text-align: center;
-   font-size: 20px;
-   font-style: bold;
-   position: absolute;
-   margin: 60px 0 0 30px;
-   padding: 15px 30px;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-   transition: 0.3s;
-   background: rgb(0, 0, 0); /* Fallback color */
-   background: rgba(0, 0, 0, 0.8);   
-   color: white;
-   text-decoration: none;
- }
- .month:hover {
-   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
-   cursor: pointer;
- }
- .month i {
-   font-size: 30px;
- }
- /*box donate yearly*/
- .year {
-   left: 800px;
-   top: 300px;
-   text-align: center;
-   font-size: 20px;
-   font-style: bold;
-   position: absolute;
-   margin: 60px 0 0 30px;
-   padding: 15px 30px;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-   transition: 0.3s;
-   background: rgb(0, 0, 0); /* Fallback color */
-   background: rgba(0, 0, 0, 0.8);   
-   color: white;
-   text-decoration: none;
- }
- .year:hover {
-   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
-   cursor: pointer;
- }
- .year i {
-   font-size: 30px;
- }
- /*close modal button*/
- .close:hover, .close:focus {
-   color: #000;
-   text-decoration: none;
-   cursor: pointer;
- }
  .close {
    color: #aaaaaa;
    float: right;
@@ -193,7 +65,7 @@ if (!empty($error)) {
   <a href="login.php"><i class="fa fa-user"></i> Log in/out</a> 
 <!--search bar-->
   <div class="search">
-   <input type="text" placeholder="Search..." class="text" autocomplete="off" onkeyup="myFunction()">
+   <input type="text" placeholder="Search..." class="text1" autocomplete="off" onkeyup="myFunction()">
    <button type="submit"><i class="fa fa-search"></i></button> 
    <ul class="myUL">
     <li><a href="css.html"> About Us</a></li>
@@ -305,100 +177,6 @@ exit;
 
 <!--internal css-->
 <style>
-/*background image*/
-.bg img {
-  padding-top: 50px;
-  width:100%;
-  display: block;
-}
-
-/*background text*/
-.heading {
-  font-size: 80px;
-  font-style: oblique;
-  position: absolute;
-  bottom: 0;
-  padding:300px 400px;
-  width: 100%;
-  color: #000;
-  text-shadow: 2px 2px white;
-}
-
-/*box donate once*/
-.now {
-  left: 200px;
-  top: 300px;
-  text-align: center;
-  font-size: 20px;
-  font-style: bold;
-  position: absolute;
-  margin: 60px 0 0 30px;
-  padding: 15px 30px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.8);   
-  color: white;
-  text-decoration:none;
-}
-.now:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
-  cursor: pointer;
-}
-.now i {
-  font-size: 30px;
-}
-
-/*box donate monthly*/
-.month {
-  left: 500px;
-  top: 300px;
-  text-align: center;
-  font-size: 20px;
-  font-style: bold;
-  position: absolute;
-  margin: 60px 0 0 30px;
-  padding: 15px 30px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.8);   
-  color: white;
-  text-decoration: none;
-}
-.month:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
-  cursor: pointer;
-}
-.month i {
-  font-size: 30px;
-}
-
-/*box donate yearly*/
-.year {
-  left: 800px;
-  top: 300px;
-  text-align: center;
-  font-size: 20px;
-  font-style: bold;
-  position: absolute;
-  margin: 60px 0 0 30px;
-  padding: 15px 30px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.8);   
-  color: white;
-  text-decoration: none;
-}
-.year:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
-  cursor: pointer;
-}
-.year i {
-  font-size: 30px;
-}
-
 /*payment modal for donate once*/
 #modal1 {
   display: none; 
@@ -454,38 +232,7 @@ exit;
   padding: 30px;
   border: 1px solid #888;
   width: 50%;
-}
-
-/*currency input field in payment*/
-.currency {
-  margin-bottom: 15px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  outline: none;
-  width: 18%;
-}
-
-/*text fields in modals*/
-#modal1 input[type=text] {
-  margin-bottom: 15px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  outline: none;
-  width: 100%;
-}
-#modal2 input[type=text] {
-  margin-bottom: 15px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  outline: none;
-  width: 100%;
-}
-#modal3 input[type=text] {
-  margin-bottom: 15px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  outline: none;
-  width: 100%;
+  text-align: left;
 }
 
 /*close modals*/
@@ -497,73 +244,6 @@ exit;
   text-decoration: none;
   padding-right: 356px;
   padding-top: 20px;
-}
-.close:hover, .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-/*columns and rows inside modal for text fields*/
-.col{
-  margin-bottom: 15px;
-  padding: 12px 18px;
-  width: 30%;  
-}
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  margin: 0 -16px;
-}
-.row i{
- font-size: 25px;
- padding-left: 3px;
- padding-right: 6px;
-}
-
-/*label for input fields in payment*/
-label {
-  margin-bottom: 10px;
-  display: block;
-}
-
-/*open modals*/
-#modal1:target {
-  display: block;
-}
-#modal2:target {
-  display: block;
-}
-#modal3:target {
-  display: block;
-}
-
-/*submit button in payment*/
-.donate {
-  background-color: black;
-  color: white;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  width: 100%;
-  cursor: pointer;
-  font-size: 17px;
-  outline: none;
-}
-.donate:hover {
-  background-color: grey;
-  color: black;
-}
-
-/*terms and privacy link inside modal*/
-.policy a {
-  color: dodgerblue;
-}
-.policy {
-  margin: -17px 17px;
 }
 </style>
 </head>
@@ -583,7 +263,7 @@ label {
   <a href="login.php"><i class="fa fa-user"></i> Log in/out</a> 
 <!--search bar-->
   <div class="search">
-   <input type="text" placeholder="Search..." class="text" autocomplete="off" onkeyup="myFunction()">
+   <input type="text" placeholder="Search..." class="text1" autocomplete="off" onkeyup="myFunction()">
    <button type="submit"><i class="fa fa-search"></i></button> 
    <ul class="myUL">
     <li><a href="css.html"> About Us</a></li>
@@ -795,7 +475,7 @@ label {
 function myFunction() {
   //variables
   var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementsByClassName('text')[0];
+  input = document.getElementsByClassName('text1')[0];
   filter = input.value.toUpperCase();
   ul = document.getElementsByClassName("myUL")[0];
   li = ul.getElementsByTagName('li');
