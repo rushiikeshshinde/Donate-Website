@@ -449,6 +449,7 @@ exit;
   padding: 30px;
   border: 1px solid #888;
   width: 50%;
+  text-align: left;
 }
 
 /*currency input field in payment*/
