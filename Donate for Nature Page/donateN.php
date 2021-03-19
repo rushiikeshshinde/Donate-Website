@@ -197,7 +197,7 @@
   <a href="login.php"><i class="fa fa-user"></i> Log in/out</a> 
  <!--search bar-->
   <div class="search">
-   <input type="text" placeholder="Search..." class="text" autocomplete="off" onkeyup="myFunction()">
+   <input type="text" placeholder="Search..."  autocomplete="off" onkeyup="myFunction()">
    <button type="submit"><i class="fa fa-search"></i></button>
    <ul class="myUL">
     <li><a href="css.html"> About Us</a></li>
@@ -568,7 +568,7 @@ label {
   <a href="login.php"><i class="fa fa-user"></i> Log in/out</a> 
 <!--search bar-->
   <div class="search">
-   <input type="text" placeholder="Search..." class="text" autocomplete="off" onkeyup="myFunction()">
+   <input type="text" placeholder="Search..."  autocomplete="off" onkeyup="myFunction()">
    <button type="submit"><i class="fa fa-search"></i></button>
    <ul class="myUL">
     <li><a href="css.html"> About Us</a></li>
