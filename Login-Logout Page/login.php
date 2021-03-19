@@ -46,46 +46,11 @@
 input[type=text]:focus, input[type=password]:focus {
   background-color: #fff;
 }
-/*login button*/
-.btn {
-  background-color: #000000;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-  width: 250px;
-}
-.btn:hover {
-  background-color: white;
-  color: black;
-}
-/*show password button*/
-.see i{
-  margin-left: -29px;
-  cursor: pointer;
-  color: black;
-}
-
-/error message*/
-.error i{
-  color: red;
-}
 
 /*links in page*/
 a{
   scroll-behavior: smooth;
   color: dodgerblue;
-}
-
-/*success login message*/
-.success {
-    margin: auto;
-  font-size: 20px;
-  border-style: inset;
-  width: 40%;
-}
-.success i {
-  color: green;
-  font-size: 30px;
 }
 
 /*modal for logged in*/
@@ -102,42 +67,6 @@ a{
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
   font-family: sans-serif;
-}
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 30px;
-  border: 1px solid #888;
-  width: 30%;
-  font-size: 15px;
-  font-weight: normal;
-  text-align: center;
-}
-.modal-content i {
-  text-align: center;
-  font-size: 30px;
-}
-.modal-content a{
- color: dodgerblue;
-}
-/*open modal*/
-#modal:target {
-  display: block;
-}
-/*close modal*/
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  text-decoration: none;
-  padding-right: 496px;
-  padding-top: 20px;
-}
-.close:hover, .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
 }
 </style>
 </head>
@@ -157,7 +86,7 @@ a{
   <a class="active" href="login.php"><i class="fa fa-user"></i> Log in/out</a> 
 <!--serch bar-->
   <div class="search">
-   <input type="text" placeholder="Search..." class="text" autocomplete="off" onkeyup="myFunction()">
+   <input type="text" placeholder="Search..." class="text1" autocomplete="off" onkeyup="myFunction()">
    <button type="submit"><i class="fa fa-search"></i></button>
    <ul class="myUL">
     <li><a href="css.html"> About Us</a></li>
@@ -279,7 +208,7 @@ a{
 function myFunction() {
   //variables
   var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementsByClassName('text')[0];
+  input = document.getElementsByClassName('text1')[0];
   filter = input.value.toUpperCase();
   ul = document.getElementsByClassName("myUL")[0];
   li = ul.getElementsByTagName('li');
