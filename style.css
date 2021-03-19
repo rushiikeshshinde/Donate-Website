@@ -314,23 +314,6 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 
-/*background logged in form*/
-.container {
-  top: 100px;
-  position: relative;  
-  width: 100%;
-  padding: 18px;
-  background-color: #000;
-  color: white;
-}
-/*logged in form fields*/
- .container input[type=text], input[type=password], input[type=email] {
-  width: 250px;
-  padding: 15px;
-  margin: 19px 0 24px 0;
-  outline: none;
-  background: #fff;
-}
 /*logged in button*/
 .btn {
   background-color: #000000;
