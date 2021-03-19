@@ -679,4 +679,18 @@ input[type=submit]:hover {
 .policy {
   margin: -17px 17px;
 }
-
+/error message*/
+.error i{
+  color: red;
+}
+/*success login message*/
+.success {
+    margin: auto;
+  font-size: 20px;
+  border-style: inset;
+  width: 40%;
+}
+.success i {
+  color: green;
+  font-size: 30px;
+}
