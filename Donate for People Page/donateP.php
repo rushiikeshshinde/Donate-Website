@@ -32,6 +32,9 @@ if (!empty($error)) {
  <!--external css-->
 <link rel="stylesheet" href="style.css">
 
+<!--Javascript-->
+<script src="javascript.js"></script> 
+
 <!--internal css-->
  <style>
 
@@ -175,6 +178,9 @@ exit;
 <!--external css-->
 <link rel="stylesheet" href="style.css">
 
+<!--Javascript-->
+<script src="javascript.js"></script> 
+	
 <!--internal css-->
 <style>
 /*payment modal for donate once*/
@@ -470,35 +476,6 @@ exit;
  </div>
 
 <!--JavaScript-->
-<!--script for search bar-->
-<script>
-function myFunction() {
-  //variables
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementsByClassName('text1')[0];
-  filter = input.value.toUpperCase();
-  ul = document.getElementsByClassName("myUL")[0];
-  li = ul.getElementsByTagName('li');
-  if(input.value.length == 0){
-     ul.style.display = "none";
-     return;
-  }else{
-     ul.style.display = "block";
-  }
-  //Loop through all list items, and hide those who don't match
-  for (i = 0; i < li.length-1; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "block";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-</script>
-
-
 <!--JQUERY-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
@@ -536,40 +513,6 @@ $('.ccnum').on('keypress change', function () {
     return value.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ');
   });
 });
-</script>
-
-<!--script for adding slash in expire date of card in donate once-->
-<script>
-function addSlashes (element) {	
-  let ele = document.getElementsByClassName('expmonth')[0];
-    ele = ele.value.split('/').join('');   
-    if(ele.length < 4 && ele.length > 0){
-        let finalVal = ele.match(/.{1,2}/g).join('/');
-   document.getElementsByClassName('expmonth')[0].value = finalVal;
-    }
-}</script>
-
-<!--script for adding slash in expire date of card in donate monthly-->
-<script>
-function addSlashesM (element) {	
-  let ele = document.getElementsByClassName('expmonth')[1];
-    ele = ele.value.split('/').join('');   
-    if(ele.length < 4 && ele.length > 0){
-        let finalVal = ele.match(/.{1,2}/g).join('/');
-   document.getElementsByClassName('expmonth')[1].value = finalVal;
-    }
-}</script>
-
-<!--script for adding slash in expire date of card in donate yearly-->
-<script>
-function addSlashesY (element) {	
-  let ele = document.getElementsByClassName('expmonth')[2];
-    ele = ele.value.split('/').join('');   
-    if(ele.length < 4 && ele.length > 0){
-        let finalVal = ele.match(/.{1,2}/g).join('/');
-   document.getElementsByClassName('expmonth')[2].value = finalVal;
-    }
-}
 </script>
 
 </body>
