@@ -220,66 +220,6 @@ exit;
   text-align: left;
 }
 
-/*currency input field in payment*/
-.currency {
-  margin-bottom: 15px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  outline: none;
-  width: 15%;
-}
-
-/*text fields in modals*/
-#modal1 input[type=text] {
-  margin-bottom: 15px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  outline: none;
-  width: 100%;
-}
-#modal2 input[type=text] {
-  margin-bottom: 15px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  outline: none;
-  width: 100%;
-}
-
-/*columns and rows inside modal for text fields*/
-.col{
-  margin-bottom: 15px;
-  padding: 12px 18px;
-  width: 30%;  
- }
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  margin: 0 -16px;
-}
-.row i{
- font-size: 25px;
- padding-left: 3px;
- padding-right: 6px;
-}
-
-
-/*label for input fields in payment*/
-.modal-content label {
-  margin-bottom: 10px;
-  display: block;
-  font-weight: bold;
-}
-
-/*open modals*/
-#modal1:target {
-  display: block;
-}
-#modal2:target {
-  display: block;
-}
-
 /*close modals*/
 .close {
   color: #aaaaaa;
@@ -289,36 +229,6 @@ exit;
   text-decoration: none;
   padding-right: 356px;
   padding-top: 20px;
-}
-.close:hover, .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/*submit button in payment*/
-.donate {
-  background-color: black;
-  color: white;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  width: 100%;
-  cursor: pointer;
-  font-size: 17px;
-  outline: none;
-}
-.donate:hover {
-  background-color: grey;
-  color: black;
-}
-
-/*terms and privacy link inside modal*/
-.policy a {
-  color: dodgerblue;
-}
-.policy {
-  margin: -17px 17px;
 }
 </style>
 </head>
