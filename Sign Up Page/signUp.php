@@ -49,47 +49,10 @@ input[type=text]:focus, input[type=password]:focus {
   background-color: #fff;
 }
 
-/*sign up button*/
-.btn {
-  background-color: #000000;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-  width: 250px;
-}
-.btn:hover {
-  background-color: white;
-  color: black;
-}
-
-/*show password*/
-.see i{
-  margin-left: -29px;
-  cursor: pointer;
-  color: black;
-}
-
 /*links*/
 a{
   scroll-behavior: smooth;
   color: dodgerblue;
-}
-
-/*show errors*/
-.error i{
-  color: red;
-}
-
-/*show success login*/
-.success {
-  margin: auto;
-  font-size: 20px;
-  border-style: inset;
-  width: 40%;
-}
-.success i {
-  color: green;
-  font-size: 30px;
 }
 </style>
 </head>
@@ -109,7 +72,7 @@ a{
   <a class="active" href="login.php"><i class="fa fa-user"></i> Log in/out</a> 
 <!--search bar-->
   <div class="search">
-   <input type="text" placeholder="Search..." class="text" autocomplete="off" onkeyup="myFunction()">
+   <input type="text" placeholder="Search..." class="text1" autocomplete="off" onkeyup="myFunction()">
    <button type="submit"><i class="fa fa-search"></i></button>
    <ul class="myUL">
     <li><a href="css.html"> About Us</a></li>
@@ -211,7 +174,7 @@ a{
 function myFunction() {
   //variables
   var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementsByClassName('text')[0];
+  input = document.getElementsByClassName('text1')[0];
   filter = input.value.toUpperCase();
   ul = document.getElementsByClassName("myUL")[0];
   li = ul.getElementsByTagName('li');
