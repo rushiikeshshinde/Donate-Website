@@ -1,4 +1,4 @@
-//function for serach bar
+//function for search bar
 function myFunction() {
   //variables
   var input, filter, ul, li, a, i, txtValue;
@@ -28,11 +28,9 @@ function myFunction() {
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
  function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
  function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
