@@ -13,6 +13,9 @@
 <!--external css-->
 <link rel="stylesheet" href="style.css">
 
+<!--Javascript-->
+<script src="javascript.js"></script> 
+ 
 <!--internal css-->
 <style>
 
@@ -191,35 +194,6 @@ input[type=submit] {
   </div>
  </div>
 </div>
-
-<!--JavaScript-->
-<!--script for search bar-->
-<script>
-function myFunction() {
-  //variables
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementsByClassName('text1')[0];
-  filter = input.value.toUpperCase();
-  ul = document.getElementsByClassName("myUL")[0];
-  li = ul.getElementsByTagName('li');
-  if(input.value.length == 0){
-    ul.style.display = "none";
-    return;
-  }else{
-    ul.style.display = "block";
-  }
-  //Loop through all list items, and hide those who don't match
-  for (i = 0; i < li.length-1; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-</script>
 
 </body>
 </html>
