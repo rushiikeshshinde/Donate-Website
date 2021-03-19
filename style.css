@@ -222,3 +222,47 @@ p i {
   background: linear-gradient(to bottom right, #405de6 10%, #5851db 20%, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45 , #ffdc80);
   color: white;
 }
+/*Contact form*/
+.container {
+  float:left;
+  padding: 10vw 13vw;
+  color: white;
+  display: inline-block;
+}
+/*Contact form fields*/
+.container input[type=text], textarea, input[type=email] {
+  width: 110%; 
+  padding: 15px;
+  margin: 2px 0 14px 0;
+  outline: none;
+  font-family: sans-serif; 
+}
+/*submit form button*/
+input[type=submit] {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  width: 100px;
+  outline: none;
+}
+input[type=submit]:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/*Contact details*/
+.contact{
+  font-size: 17px;
+  float: right;
+  margin: 13vw 20vw 0 0;
+  color: white;
+}
+/*contact details icons*/
+.contact i{
+  font-size: 30px;
+}
+/*contact details links*/
+.contact a{
+  color: dodgerblue;
+}
