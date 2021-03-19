@@ -16,6 +16,9 @@
 <!--external css-->
 <link rel="stylesheet" type="text/css" href="style.css"> 
 
+<!--Javascript-->
+<script src="javascript.js"></script> 
+
 <!--internal css-->
 <style>
 body {
@@ -100,54 +103,11 @@ body {
  </div>
 
 <!--JavaScript-->
-<!--Script for serach bar-->
-<script>
-function myFunction() {
-  //variables
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementsByClassName('text')[0];
-  filter = input.value.toUpperCase();
-  ul = document.getElementsByClassName("myUL")[0];
-  li = ul.getElementsByTagName('li');
-  if(input.value.length == 0){
-     ul.style.display = "none";
-     return;
-  }else{
-      ul.style.display = "block";
-  }
-  //Loop through all list items, and hide those who don't match
-  for (i = 0; i < li.length-1; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-</script>
-
 <!--Jquery script for sending email (php)-->
 <script>
 (function(){
     $("#submit").on("click", function(){ submitForm();});
 })();
-function submitForm(){
- var form = document.getElementById("form");
- var fd = new FormData(form);
- //send data to mail.php
-    $.ajax({
-        url: 'mail.php',
-        data: fd,
-        processData: false,
-        contentType: false,
-        type: 'POST',
-        success: function(data){
-            $("#messages").html(data);
-        }
-     });
-   }
 </script>
 
 </script>
