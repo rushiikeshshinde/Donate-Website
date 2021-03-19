@@ -31,6 +31,9 @@
 <!--external css-->
 <link rel="stylesheet" href="style.css">
 
+<!--Javascript-->
+<script src="javascript.js"></script> 
+
 <!--internal css-->
  <style>
  
@@ -65,7 +68,7 @@
   <a href="login.php"><i class="fa fa-user"></i> Log in/out</a> 
  <!--search bar-->
   <div class="search">
-   <input type="text" placeholder="Search..."  autocomplete="off" onkeyup="myFunction()">
+   <input type="text" placeholder="Search..." class="text1" autocomplete="off" onkeyup="myFunction()">
    <button type="submit"><i class="fa fa-search"></i></button>
    <ul class="myUL">
     <li><a href="css.html"> About Us</a></li>
@@ -124,34 +127,6 @@
   </div>
  </div>
 
-<!--JavaScript-->
-<!--Script for search bar-->
-<script>
-function myFunction() {
-  //variables
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementsByClassName("text")[0];
-  filter = input.value.toUpperCase();
-  ul = document.getElementsByClassName("myUL")[0];
-  li = ul.getElementsByTagName("li");
-   if(input.value.length == 0){
-      ul.style.display = "none";
-      return;
-   }else{
-      ul.style.display = "block";
-   }
-  for (i = 0; i < li.length-1; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-</script>
-
 </body>
 </html>';
 exit;
@@ -175,6 +150,9 @@ exit;
 
 <!--external css-->
 <link rel="stylesheet" href="style.css">
+
+<!--Javascript-->
+<script src="javascript.js"></script> 
 
 <!--internal css-->
 <style>
@@ -248,7 +226,7 @@ exit;
   <a href="login.php"><i class="fa fa-user"></i> Log in/out</a> 
 <!--search bar-->
   <div class="search">
-   <input type="text" placeholder="Search..."  autocomplete="off" class="text1" onkeyup="myFunction()">
+   <input type="text" placeholder="Search..." class="text1" autocomplete="off" class="text1" onkeyup="myFunction()">
    <button type="submit"><i class="fa fa-search"></i></button>
    <ul class="myUL">
     <li><a href="css.html"> About Us</a></li>
@@ -404,34 +382,6 @@ exit;
 </div>
 
 <!--JavaScript-->
-<!--script for search bar-->
-<script>
-function myFunction() {
-  //variables
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementsByClassName('text')[0];
-  filter = input.value.toUpperCase();
-  ul = document.getElementsByClassName("myUL")[0];
-  li = ul.getElementsByTagName('li');
-  if(input.value.length == 0){
-    ul.style.display = "none";
-    return;
-  }else{
-    ul.style.display = "block";
-  }
-  //Loop through all list items, and hide those who don't match
-  for (i = 0; i < li.length-1; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-</script>
-
 <!--include JQuery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
@@ -470,30 +420,6 @@ $('.ccnum').on('keypress change', function () {
     return value.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ');
   });
 });
-</script>
-
-<!--script for adding slash in expire date of card in donate once-->
-<script>
-function addSlashes (element) {	
-  let ele = document.getElementsByClassName('expmonth')[0];
-    ele = ele.value.split('/').join('');   
-    if(ele.length < 4 && ele.length > 0){
-        let finalVal = ele.match(/.{1,2}/g).join('/');
-   document.getElementsByClassName('expmonth')[0].value = finalVal;
-    }
-}
-</script>
-
-<!--script for adding slash in expire date of card in donate monthly-->
-<script>
-function addSlashesM (element) {	
-  let ele = document.getElementsByClassName('expmonth')[1];
-    ele = ele.value.split('/').join('');   
-    if(ele.length < 4 && ele.length > 0){
-        let finalVal = ele.match(/.{1,2}/g).join('/');
-   document.getElementsByClassName('expmonth')[1].value = finalVal;
-    }
-}
 </script>
 
 </body>
