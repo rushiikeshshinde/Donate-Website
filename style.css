@@ -17,7 +17,7 @@ body {
   float: left;
   color: white;
   text-align: center;
-  padding: 1.3vw 1.4vw;
+  padding: 18px 18px;
   text-decoration: underline;
   font-size: 15px;
 }
@@ -39,7 +39,7 @@ body {
   background-color:black;
   border: none;
   outline: none;
-  padding: 1.3vw 1.4vw;
+  padding: 18px 18px;
   text-decoration: underline;
   font-size: 15px;
 }.drpbutton:hover {
@@ -62,7 +62,7 @@ body {
 .droplist a {
   float: none;
   color: black;
-  padding: 1.3vw 1.7vw;
+  padding: 18px 18px;
   display: block;
   text-align: left;
   cursor: pointer;
@@ -79,8 +79,8 @@ body {
 }
 /*input search field*/
 .topnav input[type=text] {
-  padding: 0.6vw;
-  margin-top: 1vw;
+  padding: 8px;
+  margin-top: 14px;
   font-size: 15px;
   border: none;
   outline: none;
@@ -90,8 +90,8 @@ body {
 /*search icon button*/
 .topnav .search button {
   float: right;
-  padding: 0.56vw 0.7vw;
-  margin-top: 1vw;
+  padding: 7.5px;
+  margin-top: 14px;
   margin-right: 10px;
   background: #ddd;
   font-size: 16px;
@@ -155,7 +155,7 @@ img {vertical-align: middle;}
 }
 /*text inside slides*/
 .text {
-  font-size: 2vw;
+  font-size: 25px;
   font-style: oblique;
   position: absolute;
   bottom: 0;
@@ -171,10 +171,11 @@ img {vertical-align: middle;}
   margin-left: 14%;
   padding-left: 1%;
   font-size: 100%;
-  margin-right: 9vw;
+  margin-right: 112px;
 }
 /*icons in main text*/
 p i {
+  text-align: center;
   font-size: 30px;
 }
 /*links in main text*/
@@ -197,7 +198,7 @@ p i {
   padding: 14px;
   transition: all 0.3s ease;
   color: white;
-  font-size: 1.8vw;
+  font-size: 20px;
 }
 .icon-bar a:hover {
   background: #000;
@@ -225,7 +226,7 @@ p i {
 /*Contact form*/
 .container {
   float:left;
-  padding: 10vw 13vw;
+  padding: 80px 50px 0px 170px;
   color: white;
   display: inline-block;
 }
@@ -255,7 +256,7 @@ input[type=submit]:hover {
 .contact{
   font-size: 17px;
   float: right;
-  margin: 13vw 20vw 0 0;
+  margin: 150px 20% 0px -10px;
   color: white;
 }
 /*contact details icons*/
@@ -567,4 +568,68 @@ input[type=submit]:hover {
 .success i {
   color: green;
   font-size: 30px;
+}
+
+/*RESPONSIVE*/
+/*tablet view*/
+@media (max-width: 992px) and (min-width: 768px){
+	.contact{
+  		padding: 0px 300px 0px 0px;
+  		margin: 40px 20px 20px 0px;
+  	}
+  	.modal-content {
+  		width: 40%;
+  	}
+}
+/*mobile view*/
+@media (max-width: 766px) {
+	.topnav a {
+		padding: 12px 12px; 	
+	}
+	.droplist a{
+		padding: 12px 12px; 	
+	}
+	.drpbutton {
+		padding: 12px 12px; 	
+	}
+	.droplist {
+		min-width: 89px;
+	}
+	.topnav input[type=text] {
+  		padding: 4px;
+  		margin-top: 2px;
+  	}
+	.topnav .search button {
+       padding: 3.5px;
+ 	   margin-top: 2px;
+ 	}
+ 	.text {
+  	   font-size: 15px;
+  	}
+  	.slideshow-container {
+		width: 100%;
+		left: 0%;
+	}
+	.main {
+  		margin-right: 50px;
+	}
+	.icon-bar a {
+  		padding: 10px;
+  		font-size: 15px;
+	}
+	.container {
+  		 padding: 80px 0px 0px 30px;
+	}
+	.contact{
+		float: center;
+  		padding: 0px 100px 0px 0px;
+  		margin: 50px 20px 20px 0px;
+  	}
+  	.modal-content {
+ 		width: 50%;
+ 	}
+ 	.close {
+  		padding-right: 30%;
+  		padding-top: 15px;
+  	}
 }
