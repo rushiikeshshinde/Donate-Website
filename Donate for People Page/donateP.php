@@ -36,8 +36,11 @@ if (!empty($error)) {
 <script src="javascript.js"></script> 
 
 <!--internal css-->
- <style>
-
+<style>
+ body {
+  background-image: url("charity1.jpg");/*!!!!!*/
+  height: 100%;/*!!!!!*/
+}
  .topnav .search button {
   padding: 0.62vw 0.7vw;
 }
@@ -47,8 +50,18 @@ if (!empty($error)) {
    font-size: 28px;
    font-weight: bold;
    text-decoration: none;
-   padding-right: 500px;
+   padding-right: 37%;
    padding-top: 20px;
+ }
+ @media (min-width: 768px) and (max-width: 992px){ 
+  .close {
+      padding-right: 33%;
+  }
+ }
+ @media (max-width: 766px){ 
+  .close {
+      padding-right: 30%;
+  }
  }
 </style>
 </head>
@@ -87,7 +100,6 @@ if (!empty($error)) {
 
 <!--background image-->
  <div class="bg">
-  <img src="charity1.jpg" alt="">
   <div class="heading">
    <p>Time for action</p>
  </div>
@@ -126,34 +138,6 @@ if (!empty($error)) {
   </div>
  </div>
 
-<!--JavaScript-->
-<!--Script for search bar-->
-<script>
-function myFunction() {
-  //variables
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementsByClassName("text")[0];
-  filter = input.value.toUpperCase();
-  ul = document.getElementsByClassName("myUL")[0];
-  li = ul.getElementsByTagName("li");
-  if(input.value.length == 0){
-     ul.style.display = "none";
-     return;
-  }else{
-      ul.style.display = "block";
-  }
-  for (i = 0; i < li.length-1; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "block";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-</script>
-
 </body>
 </html>';
 exit;
@@ -183,6 +167,10 @@ exit;
 	
 <!--internal css-->
 <style>
+body {
+  background-image: url('charity1.jpg');/*!!!!!*/
+  height: 100%;/*!!!!!*/
+}
 /*payment modal for donate once*/
 #modal1 {
   display: none; 
@@ -248,8 +236,24 @@ exit;
   font-size: 28px;
   font-weight: bold;
   text-decoration: none;
-  padding-right: 356px;
+  padding-right: 28%;
   padding-top: 20px;
+}
+@media (min-width: 768px) and (max-width: 992px){ 
+  .modal-content {
+      width: 70%;
+  }
+  .close {
+      padding-right: 20%;
+  }
+}
+@media (max-width: 766px){ 
+  .modal-content {
+    width: 90%;
+  }
+  .close {
+      padding-right: 15%;
+  }
 }
 </style>
 </head>
@@ -288,7 +292,6 @@ exit;
 
 <!--background image-->
  <div class="bg">
-  <img src="charity1.jpg" alt="">
   <div class="heading">
    <p>Time for action</p>
   </div>
