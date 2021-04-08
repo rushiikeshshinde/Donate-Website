@@ -35,21 +35,34 @@
 <script src="javascript.js"></script> 
 
 <!--internal css-->
- <style>
- 
+<style>
+ body {
+  background-image: url("nature.jpg");/*!!!!!*/
+  height: 100%;/*!!!!!*/
+}
  .topnav .search button {
   padding: 0.62vw 0.7vw;
 }
   /*close modal button*/
-  .close {
+ .close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
     text-decoration: none;
-    padding-right: 500px;
+    padding-right: 37%;
     padding-top: 20px;
+ }
+ @media (min-width: 768px) and (max-width: 992px){ 
+  .close {
+      padding-right: 33%;
   }
+ }
+ @media (max-width: 766px){ 
+  .close {
+      padding-right: 30%;
+  }
+ }
 </style>
 </head>
 
@@ -87,7 +100,6 @@
 
 <!--background image-->
  <div class="bg">
- <img src="nature.jpg" alt="">
   <div class="heading">
    <!--background text-->
    <p>Be a participant</p>
@@ -156,6 +168,10 @@ exit;
 
 <!--internal css-->
 <style>
+body {
+  background-image: url('nature.jpg');/*!!!!!*/
+  height: 100%;/*!!!!!*/
+}
 /*payment modal for donate once*/
 #modal1 {
   display: none; 
@@ -205,8 +221,28 @@ exit;
   font-size: 28px;
   font-weight: bold;
   text-decoration: none;
-  padding-right: 356px;
+  padding-right: 28%;
   padding-top: 20px;
+}
+/*RESPONSIVE*//*!!!!!*/
+/*tablet view*/
+@media (min-width: 768px) and (max-width: 992px){ 
+  .modal-content {
+      width: 70%;
+  }
+  .close {
+      padding-right: 20%;
+    }
+}
+/*mobile view*/
+@media (max-width: 766px){ 
+
+  .modal-content {
+    width: 90%;
+  }
+  .close {
+      padding-right: 15%;
+    }
 }
 </style>
 </head>
@@ -226,7 +262,7 @@ exit;
   <a href="login.php"><i class="fa fa-user"></i> Log in/out</a> 
 <!--search bar-->
   <div class="search">
-   <input type="text" placeholder="Search..." class="text1" autocomplete="off" class="text1" onkeyup="myFunction()">
+   <input type="text" placeholder="Search..." autocomplete="off" class="text1" onkeyup="myFunction()">
    <button type="submit"><i class="fa fa-search"></i></button>
    <ul class="myUL">
     <li><a href="css.html"> About Us</a></li>
@@ -245,7 +281,6 @@ exit;
 
 <!--background image-->
 <div class="bg">
- <img src="nature.jpg" alt="">
  <div class="heading">
   <p>Be a participant</p>
  </div>
