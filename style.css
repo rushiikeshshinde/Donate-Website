@@ -132,7 +132,6 @@ body {
 .mySlides {display: none}
 img {vertical-align: middle;}
 .slideshow-container {
-  align: center;
   top: 100px;
   width: 80%;
   left: 11%;
@@ -265,7 +264,7 @@ input[type=submit]:hover {
 .contact a{
   color: dodgerblue;
 }
-/*log out modal*/
+/*modal*/
 #modal {
   display: block; /* Hidden by default */
   position: fixed; /* Stay in place */
