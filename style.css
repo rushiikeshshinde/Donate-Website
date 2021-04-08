@@ -359,13 +359,14 @@ input[type=submit]:hover {
   }
   /*box donate once*/
   .now {
-    left: 15%;/*!!!!!!*/
+    left: 15%;
     top: 300px;
     text-align: center;
     font-size: 20px;
     font-style: bold;
     position: absolute;
     margin: 5% 0 0 3%;
+    padding: 1.5% 2%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background: rgb(0, 0, 0); /* Fallback color */
@@ -383,14 +384,14 @@ input[type=submit]:hover {
 
   /*box donate monthly*/
   .month {
-    left: 500px;
+    left: 37%;
     top: 300px;
     text-align: center;
     font-size: 20px;
     font-style: bold;
     position: absolute;
-    margin: 60px 0 0 30px;
-    padding: 15px 30px;
+    margin: 5% 0 0 3%;	
+    padding: 1.5% 2%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background: rgb(0, 0, 0); /* Fallback color */
@@ -407,14 +408,14 @@ input[type=submit]:hover {
   }
   /*box take part in*/
   .part {
-    left: 800px;
+    left: 59%;
     top: 300px;
     text-align: center;
     font-size: 20px;
     font-style: bold;
     position: absolute;
-    margin: 60px 0 0 30px;
-    padding: 15px 52px;
+    margin: 5% 0 0 3%;
+    padding: 1.5% 3.5%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background: rgb(0, 0, 0); /* Fallback color */
@@ -435,14 +436,14 @@ input[type=submit]:hover {
  
  /*box donate yearly*/
  .year {
-   left: 800px;
+   left: 59%;
    top: 300px;
    text-align: center;
    font-size: 20px;
    font-style: bold;
    position: absolute;
-   margin: 60px 0 0 30px;
-   padding: 15px 30px;
+   margin: 5% 0 0 3%;
+   padding: 1.5% 2%;
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    transition: 0.3s;
    background: rgb(0, 0, 0); /* Fallback color */
@@ -469,8 +470,6 @@ input[type=submit]:hover {
   cursor: pointer;
   font-size: 17px;
   outline: none;
-  float: right;
-  overflow-x: auto;
  }
 .donate:hover {
   background-color: grey;
@@ -549,7 +548,7 @@ input[type=submit]:hover {
 .policy {
   margin: -17px 17px;
 }
-/error message*/
+/*error message*/
 .error i{
   color: red;
 }
@@ -569,11 +568,38 @@ input[type=submit]:hover {
 /*tablet view*/
 @media (max-width: 992px) and (min-width: 768px){
 	.contact{
-  		padding: 0px 300px 0px 0px;
+  		padding: 0px 50% 0px 0px;
   		margin: 40px 20px 20px 0px;
   	}
   	.modal-content {
   		width: 40%;
+  	}
+	.heading {
+    		padding: 10% 0 25% 25%;
+  	}
+  	.now {
+    		padding: 1% ;
+    		left: 9%;
+  	}
+ 	 .month {
+   		padding: 1% ;
+    		left: 35%;
+  	}
+  	.part {
+    		padding: 1% 2.6%;
+    		left: 61%;
+  	}
+    	.year {
+   		padding: 1% 2.6%;
+   		left: 61%;
+ 	}
+  	.col {
+      		margin:0px 0 0px 0px;
+      		padding: 1px 18px;
+      		width:200%;
+  	}
+  	.row i{
+      		padding-bottom: 30px;
   	}
 }
 /*mobile view*/
@@ -616,8 +642,7 @@ input[type=submit]:hover {
   		 padding: 80px 0px 0px 30px;
 	}
 	.contact{
-		float: center;
-  		padding: 0px 100px 0px 0px;
+  		padding: 0px 50% 0px 0px;
   		margin: 50px 20px 20px 0px;
   	}
   	.modal-content {
@@ -626,5 +651,40 @@ input[type=submit]:hover {
  	.close {
   		padding-right: 30%;
   		padding-top: 15px;
+  	}
+	.heading{
+    		font-size: 300%;
+    		padding: 15% 0 0% 18%;
+  	}
+  	.now {
+    		left: 15%;
+   		padding: 1% 10%;
+    		top: 40%;
+  	}
+  	.month {
+    		left: 15%;
+    		padding: 1% 10%;
+    		top: 80%;
+  	}
+  	.part {
+    		left: 15%;
+    		padding: 1% 14.3%;
+    		top: 120%;
+    	}
+    	.year {
+  		left: 15%;
+   		padding: 1% 10%;
+   		top: 120%;
+    	}
+    	.col {
+      		margin:0px 0 0px 0px;
+      		padding: 1px 18px;
+        	width:200%;
+    	}
+    	.row i{
+    		padding-bottom: 30px;
+  	}
+  	.currency {
+      		width: 30%;
   	}
 }
